@@ -22,6 +22,9 @@ public class JumpScareController : MonoBehaviour
     [Tooltip("How close the enemy gets before stopping")]
     public float stopDistance = 1.5f;
 
+    [Header("Jump Scare Sound Effect")]
+    public AudioSource jumpScareSound;
+
     private bool isTriggered = false;
     private bool hasReachedPlayer = false;
 
@@ -55,6 +58,11 @@ public class JumpScareController : MonoBehaviour
         if (enemyAnimator != null)
         {
             enemyAnimator.SetTrigger(runAnimationTrigger);
+        }
+
+        if (jumpScareSound != null)
+        {
+            jumpScareSound.Play();
         }
 
     }
