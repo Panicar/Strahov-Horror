@@ -51,15 +51,15 @@ namespace UnityStandardAssets.ImageEffects
                     if (textureImporter.mipmapEnabled == true) {
                         doImport = true;
                     }
-                    if (textureImporter.textureFormat != TextureImporterFormat.AutomaticTruecolor) {
-                        doImport = true;
-                    }
-
+                    textureImporter.textureCompression = TextureImporterCompression.Uncompressed;
+                    bool isUncompressed = true; 
+                    if (isUncompressed)
                     if (doImport)
                     {
                         textureImporter.isReadable = true;
                         textureImporter.mipmapEnabled = false;
-                        textureImporter.textureFormat = TextureImporterFormat.AutomaticTruecolor;
+                        textureImporter.textureCompression = TextureImporterCompression.Uncompressed;
+                        textureImporter.textureFormat = TextureImporterFormat.RGBA32;
                         AssetDatabase.ImportAsset (path, ImportAssetOptions.ForceUpdate);
                         //tex = AssetDatabase.LoadMainAssetAtPath(path);
                     }

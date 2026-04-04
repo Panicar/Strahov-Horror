@@ -134,5 +134,6 @@ AssetOrigin:
   productId: 148411
   packageName: Door Free Pack Aferar
   packageVersion: 1.0
-  assetPath: Assets/01_AssetStore/DoorPackFree/Meshes/Video intercom/Video intercom.FBX
+  assetPath: Assets/Assets/01_AssetStore/DoorPackFree/Meshes/Video intercom/Video
+    intercom.FBX
   uploadId: 318539

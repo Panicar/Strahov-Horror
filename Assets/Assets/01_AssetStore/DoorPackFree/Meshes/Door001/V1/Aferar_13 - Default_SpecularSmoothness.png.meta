@@ -93,5 +93,6 @@ AssetOrigin:
   productId: 148411
   packageName: Door Free Pack Aferar
   packageVersion: 1.0
-  assetPath: Assets/01_AssetStore/DoorPackFree/Meshes/Door001/V1/Aferar_13 - Default_SpecularSmoothness.png
+  assetPath: Assets/Assets/01_AssetStore/DoorPackFree/Meshes/Door001/V1/Aferar_13
+    - Default_SpecularSmoothness.png
   uploadId: 318539
